@@ -81,4 +81,5 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
-STATIC_ROOT = os.path.join(BASEDIR, 'aclarknet', 'aclarknet', 'static')
+# django.core.exceptions.ImproperlyConfigured: You're using the staticfiles app without having set the STATIC_ROOT setting to a filesystem path.
+STATIC_ROOT = os.path.join(BASE_DIR, 'aclarknet', 'aclarknet', 'static')
