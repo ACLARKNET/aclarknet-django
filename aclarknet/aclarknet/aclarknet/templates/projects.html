@@ -1,0 +1,18 @@
+{% extends "home.html" %}
+{% load staticfiles %}
+{% block content %}
+    <h1>Projects</h1>
+    <h2 class="lead">We specialize in projects that use the following Python-based technologies:</h2>
+    <div class="row">
+        <img src="{% static 'plone-logo-256.png' %}">
+    </div>
+    <div class="row">
+        <img src="{% static 'Zope.png' %}">
+    </div>
+    <div class="row">
+        <img src="{% static 'django-logo-positive.png' %}">
+    </div>
+    <div class="row">
+        <img src="{% static 'pyramid.png' %}">
+    </div>
+{% endblock %}
