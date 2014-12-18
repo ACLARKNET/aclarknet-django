@@ -20,3 +20,12 @@ class TeamMember(models.Model):
 
     def __unicode__(self):
         return self.name
+
+
+class Testimonial(models.Model):
+    name = models.CharField(max_length=60)
+    title = models.CharField(max_length=90, default=None)
+    text = models.TextField()
+
+    def __unicode__(self):
+        return self.name
