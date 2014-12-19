@@ -35,12 +35,13 @@
         <h3 class="text-muted">ACLARK.NET, LLC</h3>
         <div role="navigation">
           <ul class="nav nav-justified">
+{% block nav %}
             <li class="active"><a href="#">Home</a></li>
-            <li><a href="#">Projects</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Downloads</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="/projects">Projects</a></li>
+            <li><a href="/services">Services</a></li>
+            <li><a href="/about">About</a></li>
+            <li><a href="/contact">Contact</a></li>
+{% endblock %}
           </ul>
         </div>
       </div>
