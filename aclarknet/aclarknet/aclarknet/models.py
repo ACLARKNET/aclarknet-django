@@ -10,6 +10,8 @@ class Client(models.Model):
 
 class Service(models.Model):
     name = models.CharField(max_length=60)
+    desc = models.CharField(max_length=60)
+    text = models.TextField(default=None)
 
     def __unicode__(self):
         return self.name

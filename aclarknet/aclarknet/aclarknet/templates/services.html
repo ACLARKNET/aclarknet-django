@@ -9,5 +9,17 @@
             <li><a href="/contact">Contact</a></li>
 {% endblock %}
 
+
+
+
 {% block content %}
+
+    <h1>Services</h1>
+    <h2>We provide Python software development, deployment, maintenance and education.</h2>
+
+    {% for service in services %}
+        <h2>{{ service.name }}</h2>
+        <h3>{{ service.desc }}</h3>
+        <p>{{ service.text }}</p>
+    {% endfor %}
 {% endblock %}
