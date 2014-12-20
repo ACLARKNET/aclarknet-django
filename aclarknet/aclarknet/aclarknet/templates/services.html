@@ -9,12 +9,12 @@
 {% endblock %}
 {% block content %}
     <h1>Services</h1>
-    <h2 class="width-85">We provide services related to Python web application development:</h2>
+    <h2 class="width">We provide services related to Python web application development:</h2>
     <div class="background-white">
     {% for service in services %}
         <h2>{{ service.name }}</h2>
         <h3>{{ service.desc }}</h3>
-        <p><i class="fa fa-cog fa-5x"></i>{{ service.text }}</p>
+        <p><i class="fa fa-{{ service.icon }} fa-5x wrap"></i>{{ service.text }}</p>
     {% endfor %}
     </div>
 {% endblock %}

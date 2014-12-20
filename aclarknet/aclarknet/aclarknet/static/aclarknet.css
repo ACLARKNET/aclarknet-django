@@ -8,10 +8,10 @@
     color: #777777;
     text-decoration: none;
 }
-.width-85 {
+.width {
     width: 80%
 }
-.wrap-text {
+.wrap {
     float: left;
     padding-right: 15px;
 }
