@@ -1,13 +1,14 @@
 {% extends "home.html" %}
 {% load staticfiles %}
-
 {% block nav %}
-            <li><a href="/">Home</a></li>
-            <li><a href="/projects">Projects</a></li>
-            <li><a href="/services">Services</a></li>
-            <li class="active"><a href="/about">About</a></li>
-            <li><a href="/contact">Contact</a></li>
+    <li><a href="/">Home</a></li>
+    <li><a href="/projects">Projects</a></li>
+    <li><a href="/services">Services</a></li>
+    <li class="active"><a href="/about">About</a></li>
+    <li><a href="/contact">Contact</a></li>
 {% endblock %}
-
 {% block content %}
+    <div class="row">
+        <a href="/about/team"><h1>Team</h1></a>
+    </div>
 {% endblock %}

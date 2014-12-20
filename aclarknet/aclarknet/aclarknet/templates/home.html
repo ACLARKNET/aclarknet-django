@@ -35,18 +35,18 @@
         <h3 class="text-muted"><a class="plain" href="/">ACLARK.NET, LLC</a></h3>
         <div role="navigation">
           <ul class="nav nav-justified">
-{% block nav %}
-            <li class="active"><a href="#">Home</a></li>
+            {% block nav %}
+            <li class="active"><a href="/">Home</a></li>
             <li><a href="/projects">Projects</a></li>
             <li><a href="/services">Services</a></li>
             <li><a href="/about">About</a></li>
             <li><a href="/contact">Contact</a></li>
-{% endblock %}
+            {% endblock %}
           </ul>
         </div>
       </div>
 
-{% block content %}
+      {% block content %}
 
       <!-- Jumbotron -->
       <div class="jumbotron">
@@ -76,7 +76,7 @@
 
     </div> <!-- /container -->
 
-{% endblock %}
+    {% endblock %}
 
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="{% static 'assets/js/ie10-viewport-bug-workaround.js' %}"></script>

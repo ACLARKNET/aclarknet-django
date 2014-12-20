@@ -1,0 +1,20 @@
+{% extends "home.html" %}
+{% load staticfiles %}
+{% block nav %}
+    <li><a href="/">Home</a></li>
+    <li><a href="/projects">Projects</a></li>
+    <li><a href="/services">Services</a></li>
+    <li class="active"><a href="/about">About</a></li>
+    <li><a href="/contact">Contact</a></li>
+{% endblock %}
+{% block content %}
+    <h1>Team</h1>
+    <h2 class="width">We work with many talented Python web application developers and other professionals:</h2>
+    <div class="background-white">
+    {% for member in members %}
+        <h2>{{ member.name }}</h2>
+        <h3>{{ member.desc }}</h3>
+        <p><i class="fa fa-user fa-5x wrap"></i>{{ member.text }}</p>
+    {% endfor %}
+    </div>
+{% endblock %}
