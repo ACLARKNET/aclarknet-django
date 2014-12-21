@@ -1,0 +1,20 @@
+{% extends "home.html" %}
+{% load staticfiles %}
+{% block nav %}
+    <li><a href="/">Home</a></li>
+    <li><a href="/projects">Projects</a></li>
+    <li><a href="/services">Services</a></li>
+    <li class="active"><a href="/about">About</a></li>
+    <li><a href="/contact">Contact</a></li>
+{% endblock %}
+{% block content %}
+    <h1><a href="/about">About</a> &rarr; Testimonials</h1>
+    <h2 class="width">We have received many testimonials for exemplary work:</h2>
+    <div class="background-white">
+    {% for testimonial in testimonials %}
+        <h2>{{ testimonial.name }}</h2>
+        <h3>{{ testimonial.desc }}</h3>
+        <p><i class="fa fa-user fa-5x wrap"></i>{{ testimonial.text }}</p>
+    {% endfor %}
+    </div>
+{% endblock %}
