@@ -31,8 +31,9 @@ class TeamMember(models.Model):
 
 class Testimonial(models.Model):
     name = models.CharField(max_length=60)
-    title = models.CharField(max_length=90, default=None)
+    title = models.CharField(max_length=100, default=None)
     text = models.TextField()
+    date = models.DateTimeField(default=None)
 
     def __unicode__(self):
         return self.name
