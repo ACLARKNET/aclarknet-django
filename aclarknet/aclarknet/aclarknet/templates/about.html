@@ -8,13 +8,19 @@
     <li><a href="/contact">Contact</a></li>
 {% endblock %}
 {% block content %}
+    <h1>About</h1>
     <div class="row">
-        <a href="/about/clients"><h1>Clients</h1></a>
-    </div>
-    <div class="row">
-        <a href="/about/team"><h1>Team</h1></a>
-    </div>
-    <div class="row">
-        <a href="/about/testimonials"><h1>Testimonials</h1></a>
+        <div class="col-lg-4 background-white">
+            <p><i class="fa fa-cog fa-5x wrap"></i><a href="/about/clients"><h1>Clients</h1></a>
+            </p>
+        </div>
+        <div class="col-lg-4 background-white">
+            <p><i class="fa fa-cog fa-5x wrap"></i><a href="/about/team"><h1>Team</h1></a>
+            </p>
+        </div>
+        <div class="col-lg-4 background-white">
+            <p><i class="fa fa-cog fa-5x wrap"></i><a href="/about/testimonials"><h1>Testimonials</h1></a>
+            </p>
+        </div>
     </div>
 {% endblock %}
