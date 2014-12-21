@@ -11,10 +11,9 @@
     <h1><a href="/about">About</a> &rarr; Clients</h1>
     <h2 class="width">We serve many business, education, government and non-profit sector clients.
     <div class="background-white">
-    {% for member in members %}
-        <h2>{{ member.name }}</h2>
-        <h3>{{ member.desc }}</h3>
-        <p><i class="fa fa-user fa-5x wrap"></i>{{ member.text }}</p>
+    {% for client in clients %}
+        <h2>{{ client.name }}</h2>
+        <p><i class="fa fa-user fa-5x wrap"></i>{{ client.text }}</p>
     {% endfor %}
     </div>
 {% endblock %}

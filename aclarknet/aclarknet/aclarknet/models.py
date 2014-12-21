@@ -2,10 +2,11 @@ from django.db import models
 
 
 class Client(models.Model):
-    client_name = models.CharField(max_length=60)
+    name = models.CharField(default=None, max_length=60)
+    text = models.TextField(default=None)
 
     def __unicode__(self):
-        return self.client_name
+        return self.name
 
 
 class Service(models.Model):
