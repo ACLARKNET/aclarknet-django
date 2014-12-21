@@ -12,7 +12,9 @@ def clients(request):
 
 
 def home(request):
-    return render(request, 'home.html')
+    testimonial = Testimonial.objects.order_by('?')[0]
+    context = {'testimonial': testimonial}
+    return render(request, 'home.html', context)
 
 
 def projects(request):
