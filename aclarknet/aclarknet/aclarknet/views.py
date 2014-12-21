@@ -1,6 +1,7 @@
 from django.shortcuts import render
 from aclarknet.aclarknet.models import Service
 from aclarknet.aclarknet.models import TeamMember
+from aclarknet.aclarknet.models import Testimonial
 
 
 def home(request):
@@ -21,6 +22,12 @@ def team(request):
     members = TeamMember.objects.all()
     context = {'members': members}
     return render(request, 'team.html', context)
+
+
+def testimonials(request):
+    testimonials = Testimonial.objects.all()
+    context = {'testimonials': testimonials}
+    return render(request, 'testimonials.html', context)
 
 
 def about(request):
