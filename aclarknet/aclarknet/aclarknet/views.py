@@ -1,7 +1,14 @@
 from django.shortcuts import render
+from aclarknet.aclarknet.models import Client
 from aclarknet.aclarknet.models import Service
 from aclarknet.aclarknet.models import TeamMember
 from aclarknet.aclarknet.models import Testimonial
+
+
+def clients(request):
+    clients = Client.objects.all()
+    context = {'clients': clients}
+    return render(request, 'clients.html', context)
 
 
 def home(request):
