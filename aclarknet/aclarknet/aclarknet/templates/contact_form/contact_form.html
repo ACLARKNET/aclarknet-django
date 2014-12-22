@@ -8,7 +8,7 @@
     <li class="active"><a href="/contact">Contact</a></li>
 {% endblock %}
 {% block content %}
-<div class="row">
+<div class="row center">
     <div class="col-lg-4 background-white">
         <form method="POST" action="/contact/">{% csrf_token %}
             {{ form }}

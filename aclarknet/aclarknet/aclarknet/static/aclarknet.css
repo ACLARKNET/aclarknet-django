@@ -7,6 +7,9 @@
 .center {
     text-align: center;
 }
+.padding {
+    padding: 1em;
+}
 .plain, .plain:hover {
     color: #777777;
     text-decoration: none;
