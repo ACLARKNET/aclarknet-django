@@ -26,6 +26,9 @@
 .width-50 {
     width: 50%;
 }
+.width-60 {
+    width: 60%;
+}
 .wrap {
     float: left;
     padding-right: 15px;
