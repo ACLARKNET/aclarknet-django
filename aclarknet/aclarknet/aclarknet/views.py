@@ -12,7 +12,9 @@ def clients(request):
 
 
 def home(request):
-    testimonial = Testimonial.objects.order_by('?')[0]
+    testimonials = Testimonial.objects.order_by('?')
+    if len(testimonials) > 0:
+        testimonial = testimonials[0]
     context = {'testimonial': testimonial}
     return render(request, 'home.html', context)
 
