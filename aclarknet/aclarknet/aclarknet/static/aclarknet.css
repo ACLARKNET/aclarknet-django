@@ -14,11 +14,17 @@
     color: #777777;
     text-decoration: none;
 }
+.transparent-50 {
+    opacity: 0.50;
+}
 .transparent {
     opacity: 0.85;
 }
 .width {
     width: 80%
+}
+.width-50 {
+    width: 50%;
 }
 .wrap {
     float: left;
