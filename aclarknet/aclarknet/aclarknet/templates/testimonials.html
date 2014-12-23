@@ -12,9 +12,9 @@
     <h2 class="width">We have received many testimonials for our exemplary work:</h2>
     <div class="background-white">
     {% for testimonial in testimonials %}
-        <h2>{{ testimonial.name }}</h2>
-        <h3>{{ testimonial.desc }}</h3>
-        <p><i class="fa fa-user wrap"></i>{{ testimonial.text }}</p>
+        <h2><i class="fa fa-user wrap"></i>{{ testimonial.name }}</h2>
+        <h3>{{ testimonial.title }}</h3>
+        <p class="quote">{{ testimonial.date }}{{ testimonial.text }}</p>
     {% endfor %}
     </div>
 {% endblock %}
