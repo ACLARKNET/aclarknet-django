@@ -1,1 +1,1 @@
-web: python aclarknet/manage.py runserver 0.0.0.0:$PORT
+web: gunicorn aclarknet.wsgi --log-file -
