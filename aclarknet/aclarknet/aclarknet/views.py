@@ -13,6 +13,7 @@ def clients(request):
 
 def home(request):
     testimonials = Testimonial.objects.order_by('?')
+    testimonial = None
     if len(testimonials) > 0:
         testimonial = testimonials[0]
     context = {'testimonial': testimonial}
