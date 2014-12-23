@@ -14,7 +14,10 @@
     {% for testimonial in testimonials %}
         <h2><i class="fa fa-user wrap"></i>{{ testimonial.name }}</h2>
         <h3>{{ testimonial.title }}</h3>
-        <p class="quote">{{ testimonial.date }}{{ testimonial.text }}</p>
+        <div class="quote">
+            <p>{{ testimonial.date }}</p>
+            <p>{{ testimonial.text }}</p>
+        </div>
     {% endfor %}
     </div>
 {% endblock %}
