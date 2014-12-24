@@ -37,7 +37,7 @@ def team(request):
 
 
 def testimonials(request):
-    testimonials = Testimonial.objects.order_by('date')
+    testimonials = Testimonial.objects.order_by('-date')
     context = {'testimonials': testimonials}
     return render(request, 'testimonials.html', context)
 
