@@ -10,14 +10,15 @@
 {% block content %}
     <h1><a href="/about">About</a> &rarr; Testimonials</h1>
     <h2 class="width">We have received many testimonials for our exemplary work:</h2>
-    <div class="background-white padding">
     {% for testimonial in testimonials %}
+    <div class="background-white padding">
         <h2><i class="fa fa-user wrap"></i>{{ testimonial.name }}</h2>
         <h3>{{ testimonial.title }}</h3>
         <div class="quote">
             <p class="border wrap-right">{{ testimonial.date }}</p>
             <p>{{ testimonial.text }}</p>
         </div>
-    {% endfor %}
     </div>
+    <br />
+    {% endfor %}
 {% endblock %}
