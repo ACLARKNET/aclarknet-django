@@ -2,6 +2,7 @@ from django.db import models
 
 
 class Client(models.Model):
+    icon = models.CharField(default=None, max_length=30)
     name = models.CharField(default=None, max_length=60)
     text = models.TextField(default=None)
 
