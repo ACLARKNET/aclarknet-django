@@ -3,3 +3,5 @@ dump:
 push:
 	git push
 	git push heroku master
+sync:
+	heroku run python aclarknet/manage.py syncdb
