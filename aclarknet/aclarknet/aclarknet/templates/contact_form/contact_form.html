@@ -10,9 +10,11 @@
 {% block content %}
     <h1>Contact</h1>
     <div class="background-white padding">
-        <form method="POST" action="/contact/">{% csrf_token %}
-            {{ form }}
-            <input type="submit">
-        </form>
+        <table>
+            <form method="POST" action="/contact/">{% csrf_token %}
+                {{ form }}
+                <input type="submit">
+            </form>
+        </table>
     </div>
 {% endblock %}
