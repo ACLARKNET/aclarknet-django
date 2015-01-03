@@ -10,7 +10,7 @@
 {% block content %}
     <h1><a href="/about">About</a> &rarr; Team</h1>
     <h2 class="width">We work with many talented programmers and other skilled professionals:</h2>
-    <div class="background-white">
+    <div class="background-white padding">
     {% for member in members %}
         <h2><i class="fa fa-user"></i>&nbsp;{{ member.name }}</h2>
         <h3>{{ member.desc }}</h3>
