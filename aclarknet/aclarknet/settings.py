@@ -93,7 +93,7 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'aclarknet', 'aclarknet', 'static')
 
 # Sendgrid
 EMAIL_HOST = 'smtp.sendgrid.net'
-EMAIL_HOST_USER = os.environ.get(SENDGRID_USERNAME, None)
-EMAIL_HOST_PASSWORD = os.environ.get(SENDGRID_PASSWORD, None)
+EMAIL_HOST_USER = os.environ.get('SENDGRID_USERNAME', None)
+EMAIL_HOST_PASSWORD = os.environ.get('SENDGRID_PASSWORD', None)
 EMAIL_PORT = 587
 EMAIL_USE_TLS = True
