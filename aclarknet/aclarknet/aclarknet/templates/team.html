@@ -12,9 +12,9 @@
     <h2 class="width">We work with many talented programmers and other skilled professionals:</h2>
     <div class="background-white">
     {% for member in members %}
-        <h2><i class="fa fa-user wrap">{{ member.name }}</h2>
+        <h2><i class="fa fa-user"></i>{{ member.name }}</h2>
         <h3>{{ member.desc }}</h3>
-        <p></i>{{ member.text }}</p>
+        <p>{{ member.text }}</p>
     {% endfor %}
     </div>
 {% endblock %}
