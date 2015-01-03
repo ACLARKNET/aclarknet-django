@@ -8,12 +8,11 @@
     <li class="active"><a href="/contact">Contact</a></li>
 {% endblock %}
 {% block content %}
-<div class="row center">
-    <div class="col-lg-4 background-white">
-        <form method="POST" action="/contact/">{% csrf_token %}
+    <h1>Contact</h1>
+    <div class="background-white padding">
+        <form method="POST" action="/contact">{% csrf_token %}
             {{ form }}
             <input type="submit">
         </form>
     </div>
-</div>
 {% endblock %}
