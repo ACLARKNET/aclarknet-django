@@ -1,8 +1,8 @@
 Django
 django-admin-bootstrapped
-django-contact-form
 dj-database-url
 dj-static
 gunicorn
 psycopg2
 -e aclarknet
+-e hg+ssh://hg@bitbucket.org/ubernostrum/django-contact-form#egg=django-contact-form
