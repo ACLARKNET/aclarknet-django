@@ -91,9 +91,9 @@ STATIC_URL = '/static/'
 # django.core.exceptions.ImproperlyConfigured: You're using the staticfiles app without having set the STATIC_ROOT setting to a filesystem path.
 STATIC_ROOT = os.path.join(BASE_DIR, 'aclarknet', 'aclarknet', 'static')
 
-# Sendgrid
+# Send mail with sendgrid
 EMAIL_HOST = 'smtp.sendgrid.net'
-EMAIL_HOST_USER = os.environ.get('SENDGRID_USERNAME', None)
-EMAIL_HOST_PASSWORD = os.environ.get('SENDGRID_PASSWORD', None)
 EMAIL_PORT = 587
+EMAIL_HOST_USER = os.environ.get('SENDGRID_USERNAME')
+EMAIL_HOST_PASSWORD = os.environ.get('SENDGRID_PASSWORD')
 EMAIL_USE_TLS = True
