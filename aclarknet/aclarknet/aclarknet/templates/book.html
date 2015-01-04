@@ -1,0 +1,19 @@
+{% extends "home.html" %}
+{% load staticfiles %}
+{% block nav %}
+    <li><a href="/">Home</a></li>
+    <li><a href="/projects">Projects</a></li>
+    <li><a href="/services">Services</a></li>
+    <li class="active"><a href="/about">About</a></li>
+    <li><a href="/contact">Contact</a></li>
+{% endblock %}
+{% block content %}
+    <h1>Book</h1>
+    <h2>We wrote the book on Plone site deployments:</h2>
+    <div class="row background-white center padding transparent">
+        <img class="img-thumbnail width-25" src="{% static 'book.png' %}">
+    </div>
+    <div class="row background-white center padding transparent">
+        <i class="fa fa-arrow-circle-right"></i>&nbsp;<a href="https://www.packtpub.com/web-development/plone-33-site-administration">Buy copy</a>
+    </div>
+{% endblock %}

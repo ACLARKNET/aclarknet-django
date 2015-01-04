@@ -7,6 +7,10 @@ from aclarknet.aclarknet.models import TeamMember
 from aclarknet.aclarknet.models import Testimonial
 
 
+def book(request):
+    return render(request, 'book.html')
+
+
 def clients(request):
     clients = Client.objects.all()
     context = {'clients': clients}
