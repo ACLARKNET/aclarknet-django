@@ -10,6 +10,7 @@
 {% block content %}
     <h1>Contact</h1>
     <div class="background-white padding">
+        {% csrf_token %}
         {{ form }}
         <input class="btn btn-lg btn-success" type="submit" value="Send message">
     </div>

@@ -48,6 +48,23 @@ def about(request):
 
 
 def contact(request):
-    form = ContactForm()
+    # https://docs.djangoproject.com/en/1.7/topics/forms/#the-view
+    # if this is a POST request we need to process the form data
+    if request.method == 'POST':
+        # create a form instance and populate it with data from the request:
+        form = ContactForm(request.POST)
+        # check whether it's valid:
+        if form.is_valid():
+            # process the data in form.cleaned_data as required
+            from django.core.mail import send_mail
+            message = form.cleaned_data['message']
+            email = form.cleaned_data['sender']
+            recipients = ['aclark@aclark.net']
+            send_mail(subject, message, sender, recipients)
+            # redirect to a new URL:
+            return HttpResponseRedirect('/contact/')
+    # if a GET (or any other method) we'll create a blank form
+    else:
+        form = ContactForm()
     context = {'form': form}
     return render(request, 'contact.html', context)
