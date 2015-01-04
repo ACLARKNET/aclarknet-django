@@ -16,7 +16,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(__file__))
 # See https://docs.djangoproject.com/en/1.7/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'tt$q#-ee*p+th4(o_zc#u-s2ts(6jl=boi60xu1^s^ei4s7i1v'
+SECRET_KEY = os.environ.get('SECRET_KEY', 'tt$q#-ee*p+th4(o_zc#u-s2ts(6jl=boi60xu1^s^ei4s7i1v')
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -97,7 +97,7 @@ EMAIL_PORT = 587
 EMAIL_HOST_USER = os.environ.get('SENDGRID_USERNAME')
 EMAIL_HOST_PASSWORD = os.environ.get('SENDGRID_PASSWORD')
 EMAIL_USE_TLS = True
-DEFAULT_FROM_EMAIL = 'aclark@aclark.net'
+DEFAULT_FROM_EMAIL = 'Alex Clark <aclark@aclark.net>'
 MANAGERS = (
     'aclark@aclark.net',
 )
