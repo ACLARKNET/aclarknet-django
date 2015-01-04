@@ -10,13 +10,7 @@
 {% block content %}
     <h1>Contact</h1>
     <div class="background-white padding">
-        <form method="POST" action="/contact/">{% csrf_token %}
-            <table>
-                {{ form }}
-            </table>
-            <div class="center padding">
-                <input class="btn btn-lg btn-success" type="submit" value="Send message">
-            </div>
-        </form>
+        {{ form }}
+        <input class="btn btn-lg btn-success" type="submit" value="Send message">
     </div>
 {% endblock %}

@@ -1,4 +1,5 @@
 from django.shortcuts import render
+from aclarknet.aclarknet.forms import ContactForm
 from aclarknet.aclarknet.models import Client
 from aclarknet.aclarknet.models import Service
 from aclarknet.aclarknet.models import TeamMember
@@ -44,3 +45,9 @@ def testimonials(request):
 
 def about(request):
     return render(request, 'about.html')
+
+
+def contact(request):
+    form = ContactForm()
+    context = {'form': form}
+    return render(request, 'contact.html', context)

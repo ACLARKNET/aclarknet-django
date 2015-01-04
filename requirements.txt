@@ -5,4 +5,3 @@ dj-static
 gunicorn
 psycopg2
 -e aclarknet
--e hg+ssh://hg@bitbucket.org/aclark4life/django-contact-form#egg=django-contact-form
