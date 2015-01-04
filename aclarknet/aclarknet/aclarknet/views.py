@@ -17,6 +17,8 @@ def home(request):
     if len(testimonials) > 0:
         testimonial = testimonials[0]
     context = {'testimonial': testimonial}
+    from django.core.mail import send_mail
+    send_mail('Subject here', 'Here is the message.', 'aclark@aclark.net', ['aclark@aclark.net'], fail_silently=False)
     return render(request, 'home.html', context)
 
 
@@ -44,11 +46,3 @@ def testimonials(request):
 
 def about(request):
     return render(request, 'about.html')
-
-
-def contact(request):
-
-    from django.core.mail import send_mail
-    send_mail('Subject here', 'Here is the message.', 'aclark@aclark.net', ['aclark@aclark.net'], fail_silently=False)
-
-    return render(request, 'contact.html')
