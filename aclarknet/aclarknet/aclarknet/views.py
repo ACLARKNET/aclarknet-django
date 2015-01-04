@@ -58,8 +58,9 @@ def contact(request):
             # process the data in form.cleaned_data as required
             from django.core.mail import send_mail
             message = form.cleaned_data['message']
-            email = form.cleaned_data['sender']
+            sender = form.cleaned_data['email']
             recipients = ['aclark@aclark.net']
+            subject = 'Test'
             send_mail(subject, message, sender, recipients)
             # redirect to a new URL:
             return HttpResponseRedirect('/contact/')
