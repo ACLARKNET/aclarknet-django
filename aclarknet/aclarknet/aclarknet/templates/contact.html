@@ -9,13 +9,15 @@
 {% endblock %}
 {% block content %}
     <h1>Contact</h1>
-    <div class="background-white padding">
-        <form method="POST" action="/contact/">
-        {% csrf_token %}
-        <table>
-            {{ form }}
-        </table>
-        <input class="btn btn-lg btn-success" type="submit" value="Send message">
-        </form>
+    <div class="row background-white padding">
+        <div class="col-lg-12">
+            <form method="POST" action="/contact/">{% csrf_token %}
+                <table>{{ form }}</table>
+                <br>
+                <div class="center">
+                    <input class="btn btn-lg btn-success" type="submit" value="Send message">
+                </div>
+            </form>
+        </div>
     </div>
 {% endblock %}
