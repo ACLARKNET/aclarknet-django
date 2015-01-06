@@ -11,7 +11,7 @@
     <h1>Services</h1>
     <h2 class="width">We provide many services related to web application development:</h2>
     {% for service in services %}
-    <div class="background-white padding">
+    <div class="background-white padding transparent">
         <h2><i class="fa fa-{{ service.icon }}"></i>&nbsp;{{ service.name }}</h2>
         <p>{{ service.text|safe }}</p>
     </div>
