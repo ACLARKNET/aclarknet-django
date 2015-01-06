@@ -14,7 +14,7 @@
     <div class="background-white padding">
         <h2><i class="fa fa-user"></i>&nbsp;{{ testimonial.name }}</h2>
         <div class="quote">
-            <p class="border wrap-right">{{ testimonial.date|date:"%b%e, %Y" }}</p>
+            <p class="border wrap-right">{{ testimonial.date|date:"be, Y" }}</p>
             <p>{{ testimonial.text }}</p>
         </div>
     </div>
