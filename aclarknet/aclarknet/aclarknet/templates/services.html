@@ -12,9 +12,9 @@
     <h2 class="width">We provide many services related to web application development:</h2>
     {% for service in services %}
     <div class="background-white padding">
-        <h2>{{ service.name }}</h2>
+        <h2><i class="fa fa-{{ service.icon }}"></i>{{ service.name }}</h2>
         <h3>{{ service.desc }}</h3>
-        <p><i class="fa fa-{{ service.icon }} fa-5x wrap"></i>{{ service.text }}</p>
+        <p>{{ service.text }}</p>
     </div>
     {% endfor %}
 {% endblock %}
