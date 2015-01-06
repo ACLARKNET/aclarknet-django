@@ -31,8 +31,7 @@ class TeamMember(models.Model):
 
 
 class Testimonial(models.Model):
-    name = models.CharField(max_length=60)
-    title = models.CharField(max_length=120, default=None)
+    name = models.CharField(max_length=120)
     text = models.TextField()
     date = models.DateTimeField(default=None)
 
