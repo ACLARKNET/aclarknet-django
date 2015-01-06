@@ -3,7 +3,7 @@ from django.db import models
 
 class Client(models.Model):
     icon = models.CharField(default=None, max_length=30, null=True)
-    name = models.CharField(default=None, max_length=60)
+    name = models.CharField(default=None, max_length=80)
     text = models.TextField(default=None)
 
     def __unicode__(self):
