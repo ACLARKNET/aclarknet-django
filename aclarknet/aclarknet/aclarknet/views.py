@@ -16,7 +16,7 @@ def book(request):
 
 
 def clients(request):
-    clients = Client.objects.all()
+    clients = Client.objects.order_by('name')
     context = {'clients': clients}
     return render(request, 'clients.html', context)
 
