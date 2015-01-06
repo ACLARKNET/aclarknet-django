@@ -12,7 +12,6 @@ class Client(models.Model):
 
 class Service(models.Model):
     name = models.CharField(max_length=60)
-    desc = models.CharField(max_length=60)
     icon = models.CharField(default=None, max_length=30)
     text = models.TextField(default=None)
 
@@ -22,7 +21,6 @@ class Service(models.Model):
 
 class TeamMember(models.Model):
     name = models.CharField(max_length=60)
-    desc = models.CharField(default=None, max_length=60)
     icon = models.CharField(default=None, max_length=30)
     text = models.TextField(default=None)
 
