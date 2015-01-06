@@ -101,3 +101,6 @@ DEFAULT_FROM_EMAIL = 'Alex Clark <aclark@aclark.net>'
 MANAGERS = (
     'aclark@aclark.net',
 )
+
+# Format date for testimonials
+DATE_FORMAT = "%Y-%m-%d"
