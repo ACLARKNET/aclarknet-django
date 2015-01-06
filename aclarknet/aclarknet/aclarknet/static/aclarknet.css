@@ -1,3 +1,9 @@
+.about-team-link {
+    color: black;
+}
+.about-team-link:hover {
+    color: black;
+}
 .background-white {
     background: white;
 }
