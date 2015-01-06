@@ -67,7 +67,7 @@ def projects(request):
 
 
 def services(request):
-    services = Service.objects.all()
+    services = Service.objects.order_by('name')
     context = {'services': services}
     return render(request, 'services.html', context)
 
