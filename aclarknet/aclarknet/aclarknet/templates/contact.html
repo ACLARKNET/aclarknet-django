@@ -9,10 +9,11 @@
 {% endblock %}
 {% block content %}
     <h1>Contact</h1>
+    <h2>Use the form below to contact Amy & Alex Clark:</h2>
     <div class="row background-white padding">
         <div class="col-lg-12">
             <form method="POST" action="/contact/">{% csrf_token %}
-                <table>{{ form }}</table>
+                <table align="center">{{ form }}</table>
                 <br>
                 <div class="center">
                     <input class="btn btn-lg btn-success" type="submit" value="Send message">
