@@ -17,6 +17,10 @@ def clients(request):
     return render(request, 'clients.html', context)
 
 
+def history(request):
+    return render(request, 'history.html')
+
+
 def home(request):
     testimonials = Testimonial.objects.order_by('?')
     testimonial = None

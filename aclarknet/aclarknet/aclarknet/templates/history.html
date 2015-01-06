@@ -1,0 +1,18 @@
+{% extends "home.html" %}
+{% load staticfiles %}
+{% block nav %}
+    <li><a href="/">Home</a></li>
+    <li><a href="/projects">Projects</a></li>
+    <li><a href="/services">Services</a></li>
+    <li class="active"><a href="/about">About</a></li>
+    <li><a href="/contact">Contact</a></li>
+{% endblock %}
+{% block content %}
+    <h1>History</h1>
+    <div class="row background-white padding transparent">
+        <div class="col-lg-12">
+            <p class="lead">In 2004 Alex Clark began "doing business as" ACLARK.NET, a registered trade name in the state of Maryland. His first client was a company in the UK with a Plone website.</p>
+            <p class="lead">In 2007 Amy Clark created ACLARK.NET, LLC, a limited liability corporation in the state of Maryland.</p>
+        </div>
+    </div>
+{% endblock %}
