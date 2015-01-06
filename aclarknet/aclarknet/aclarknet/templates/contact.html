@@ -12,7 +12,9 @@
     <div class="background-white padding">
         <form method="POST" action="/contact/">
         {% csrf_token %}
-        {{ form }}
+        <table>
+            {{ form }}
+        </table>
         <input class="btn btn-lg btn-success" type="submit" value="Send message">
         </form>
     </div>
