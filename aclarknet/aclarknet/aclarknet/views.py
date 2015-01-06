@@ -58,6 +58,10 @@ def home(request):
     return render(request, 'home.html', context)
 
 
+def open_source(request):
+    return render(request, 'open_source.html')
+
+
 def projects(request):
     return render(request, 'projects.html')
 
