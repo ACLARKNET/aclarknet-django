@@ -62,6 +62,10 @@ def home(request):
     return render(request, 'home.html', context)
 
 
+def location(request):
+    return render(request, 'location.html')
+
+
 def open_source(request):
     return render(request, 'open_source.html')
 

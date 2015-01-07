@@ -1,0 +1,18 @@
+{% extends "home.html" %}
+{% load staticfiles %}
+{% block nav %}
+    <li><a href="/">Home</a></li>
+    <li><a href="/projects">Projects</a></li>
+    <li><a href="/services">Services</a></li>
+    <li class="active"><a href="/about">About</a></li>
+    <li><a href="/contact">Contact</a></li>
+{% endblock %}
+{% block content %}
+    <h1><a href="/about">About</a> &rarr; Location</h1>
+    <h2>About our location:</h2>
+    <div class="row background-white padding transparent">
+        <div class="col-lg-12">
+            <p class="lead">We are located in Bethesda, MD, a suburb of Washington, DC, USA. We service a global community of individuals and organizations and are always eager and available to help.</p>
+        </div>
+    </div>
+{% endblock %}
