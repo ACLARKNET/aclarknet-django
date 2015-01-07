@@ -104,8 +104,6 @@ MANAGERS = (
 )
 
 # Admin uploaded files e.g. team member pics
-# django.core.exceptions.ImproperlyConfigured: The MEDIA_ROOT and STATIC_ROOT settings must have different values
-MEDIA_ROOT = os.path.join(BASE_DIR, 'aclarknet', 'aclarknet', 'static', 'media')
 CUMULUS = {
     'USERNAME': 'aclark4life',
     'API_KEY': os.environ.get('CLOUDFILES_API_KEY'),
