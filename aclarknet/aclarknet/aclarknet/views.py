@@ -70,8 +70,8 @@ def open_source(request):
     return render(request, 'open_source.html')
 
 
-def projects(request):
-    return render(request, 'projects.html')
+def technologies(request):
+    return render(request, 'technologies.html')
 
 
 def services(request):
