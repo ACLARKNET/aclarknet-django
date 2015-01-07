@@ -73,7 +73,7 @@ def services(request):
 
 
 def team(request):
-    members = TeamMember.objects.all()
+    members = TeamMember.objects.order_by('name')
     context = {'members': members}
     return render(request, 'team.html', context)
 
