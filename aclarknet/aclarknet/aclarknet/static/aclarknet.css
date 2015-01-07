@@ -43,12 +43,19 @@
     vertical-align: middle;
     white-space: nowrap;
 }
+.margin {
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
 .message {
     width: 100%;
     margin: 2em;
 }
 .padding {
     padding: 1em;
+}
+.padding-bottom {
+    padding-bottom: 1em;
 }
 .plain, .plain:hover {
     color: #777777;
