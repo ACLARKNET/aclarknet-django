@@ -1,6 +1,7 @@
 Django
 Pillow
 django-admin-bootstrapped
+django-cumulus
 dj-database-url
 dj-static
 gunicorn
