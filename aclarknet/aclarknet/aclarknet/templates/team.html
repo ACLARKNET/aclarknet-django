@@ -25,7 +25,7 @@
     <div class="background-white padding">
     {% for member in members %}
         <h2><i class="fa fa-user"></i>&nbsp;{{ member.name }}</h2>
-        <p>{{ member.text }}</p>
+        <p><img class="img-thumbnail wrap" src="{% static 'media/' %}{{ member.icon.url }}">{{ member.text }}</p>
     {% endfor %}
     </div>
 {% endblock %}

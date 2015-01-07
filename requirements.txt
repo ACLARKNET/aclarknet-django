@@ -1,4 +1,5 @@
 Django
+Pillow
 django-admin-bootstrapped
 dj-database-url
 dj-static

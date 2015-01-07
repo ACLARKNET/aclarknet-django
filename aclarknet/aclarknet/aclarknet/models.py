@@ -21,7 +21,7 @@ class Service(models.Model):
 
 class TeamMember(models.Model):
     name = models.CharField(max_length=60)
-    icon = models.CharField(default=None, max_length=30)
+    icon = models.ImageField()
     text = models.TextField(default=None)
 
     def __unicode__(self):
