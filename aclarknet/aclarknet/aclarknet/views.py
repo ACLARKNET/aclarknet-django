@@ -21,6 +21,10 @@ def clients(request):
     return render(request, 'clients.html', context)
 
 
+def community(request):
+    return render(request, 'community.html')
+
+
 def contact(request):
     # https://docs.djangoproject.com/en/1.7/topics/forms/#the-view
     # if this is a POST request we need to process the form data
