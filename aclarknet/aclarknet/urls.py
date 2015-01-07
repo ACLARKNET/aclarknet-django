@@ -3,6 +3,7 @@ from django.contrib import admin
 
 urlpatterns = patterns('',
     url(r'^$', 'aclarknet.aclarknet.views.home', name='home'),
+    url(r'^about/blog', 'aclarknet.aclarknet.views.blog', name='blog'),
     url(r'^about/book', 'aclarknet.aclarknet.views.book', name='book'),
     url(r'^about/clients', 'aclarknet.aclarknet.views.clients', name='clients'),
     url(r'^about/community', 'aclarknet.aclarknet.views.community', name='community'),
