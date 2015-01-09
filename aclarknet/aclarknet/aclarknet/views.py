@@ -42,10 +42,11 @@ def contact(request):
             message = form.cleaned_data['message']
             sender = form.cleaned_data['email']
             recipients = ['info@aclark.net']
-            subject = 'Website form submission'
+            import datetime
+            subject = 'ACLARK.NET Contact Form Submission %s' % datetime.datetime.now().strftime('%m/%d/%Y %H:%M:%S')
             send_mail(subject, message, sender, recipients)
             # redirect to a new URL:
-            return HttpResponseRedirect('/contact/')
+            return HttpResponseRedirect('/contact/thanks')
     # if a GET (or any other method) we'll create a blank form
     else:
         form = ContactForm()
@@ -94,3 +95,9 @@ def testimonials(request):
     testimonials = Testimonial.objects.order_by('-date')
     context = {'testimonials': testimonials}
     return render(request, 'testimonials.html', context)
+
+
+def thanks(request):
+    return render(request, 'thanks.html')
+
+

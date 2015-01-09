@@ -15,6 +15,7 @@ urlpatterns = patterns('',
     url(r'^about', 'aclarknet.aclarknet.views.about', name='about'),
     url(r'^admin/', include(admin.site.urls)),
     url(r'^contact', 'aclarknet.aclarknet.views.contact', name='contact'),
+    url(r'^contact/thanks', 'aclarknet.aclarknet.views.thanks', name='thanks'),
     url(r'^services', 'aclarknet.aclarknet.views.services', name='services'),
     url(r'^technologies', 'aclarknet.aclarknet.views.technologies', name='technologies'),
 )
