@@ -12,7 +12,7 @@
     <h2 class="width">We have received many testimonials for our exemplary work:</h2>
     {% for testimonial in testimonials %}
     <div class="background-white padding">
-        <h2><i class="fa fa-user"></i>&nbsp;{{ testimonial.name }}</h2>
+        <h2 name="{{testimonial.name | slugify}}"><i class="fa fa-user"></i>&nbsp;{{ testimonial.name }}</h2>
         <div class="quote">
             <p class="border wrap-right">{{ testimonial.date|date:"N j, Y" }}</p>
             <p>{{ testimonial.text }}</p>
