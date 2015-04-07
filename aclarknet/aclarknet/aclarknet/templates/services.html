@@ -13,7 +13,7 @@
     {% for service in services %}
     <div class="background-white padding transparent">
         <h2><i class="fa fa-{{ service.icon }}"></i>&nbsp;{{ service.name }}</h2>
-        <p>{{ service.text|safe }}</p>
+        <p class="lead">{{ service.text|safe }}</p>
     </div>
     {% endfor %}
 {% endblock %}
