@@ -40,11 +40,12 @@ def contact(request):
             # process the data in form.cleaned_data as required
             from django.core.mail import send_mail
             message = form.cleaned_data['message']
+            message2 = form.cleaned_data['message2']
             sender = form.cleaned_data['email']
             recipients = ['info@aclark.net']
             import datetime
             subject = 'ACLARK.NET Contact Form Submission %s' % datetime.datetime.now().strftime('%m/%d/%Y %H:%M:%S')
-            send_mail(subject, message, sender, recipients)
+            send_mail(subject, message + '\n\n' + message2, sender, recipients)
             # redirect to a new URL:
             return HttpResponseRedirect('/contact/thanks')
     # if a GET (or any other method) we'll create a blank form
