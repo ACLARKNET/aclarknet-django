@@ -81,10 +81,7 @@
     width: 25%;
 }
 .width-30 {
-    width: 250px;
-}
-.width-35 {
-    width: 320px;
+    width: 30%;
 }
 .width-40 {
     width: 40%;
@@ -106,6 +103,12 @@
 }
 .width-90 {
     width: 90%;
+}
+.width-python {
+    width: 320px;
+}
+.width-zope {
+    width: 320px;
 }
 .wrap {
     float: left;
