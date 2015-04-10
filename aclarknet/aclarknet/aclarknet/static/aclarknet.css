@@ -104,6 +104,15 @@
 .width-90 {
     width: 90%;
 }
+.width-django {
+    width: 320px;
+}
+.width-plone {
+    width: 320px;
+}
+.width-pyramid {
+    width: 320px;
+}
 .width-python {
     width: 320px;
 }
