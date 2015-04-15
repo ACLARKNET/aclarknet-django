@@ -39,11 +39,15 @@ def contact(request):
         if form.is_valid():
             # process the data in form.cleaned_data as required
             from django.core.mail import send_mail
+            import os
+            import datetime
             message = form.cleaned_data['message']
             message2 = form.cleaned_data['message2']
             sender = form.cleaned_data['email']
+            salesforce = os.environ.get('EMAIL_TO_SALESFORCE_ADDRESS')
             recipients = ['info@aclark.net']
-            import datetime
+            if salesforce:
+                recipients.append(salesforce)
             subject = 'ACLARK.NET Contact Form Submission %s' % datetime.datetime.now().strftime('%m/%d/%Y %H:%M:%S')
             send_mail(subject, message + '\n\n' + message2, sender, recipients)
             # redirect to a new URL:
