@@ -44,12 +44,12 @@ def contact(request):
             message = form.cleaned_data['message']
             message2 = form.cleaned_data['message2']
             sender = form.cleaned_data['email']
-            salesforce = os.environ.get('EMAIL_TO_SALESFORCE_ADDRESS')
             recipients = ['info@aclark.net']
-            if salesforce:
-                recipients.append(salesforce)
+            salesforce = os.environ.get('EMAIL_TO_SALESFORCE_ADDRESS')
             subject = 'ACLARK.NET Contact Form Submission %s' % datetime.datetime.now().strftime('%m/%d/%Y %H:%M:%S')
             send_mail(subject, message + '\n\n' + message2, sender, recipients)
+            if salesforce:
+                send_mail(subject, message + '\n\n' + message2, 'info@aclark.net', [salesforce])
             # redirect to a new URL:
             return HttpResponseRedirect('/contact/thanks')
     # if a GET (or any other method) we'll create a blank form
