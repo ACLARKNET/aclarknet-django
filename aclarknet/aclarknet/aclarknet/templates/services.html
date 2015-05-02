@@ -13,10 +13,11 @@
     <div class="background-white padding transparent">
     {% for service in services %}
         <div class="row">
-            <h2><i class="fa fa-{{ service.icon }}"></i>&nbsp;{{ service.name }}</h2>
-            <p class="lead">{{ service.text|safe }}</p>
-        </div>
-        <hr />
+            <div class="col-lg-4">
+                <h2><i class="fa fa-{{ service.icon }}"></i>&nbsp;{{ service.name }}</h2>
+                <p class="lead">{{ service.text|safe }}</p>
+            </div>
+            <hr />
     {% endfor %}
     </div>
 {% endblock %}
