@@ -11,7 +11,7 @@
     <h1><a href="/about">About</a> &rarr; Testimonials</h1>
     <h2 class="width">A partial list of testimonials we have received for our work</h2>
     <div class="background-white padding">
-    {% for testimonial in testimonials %}
+        {% for testimonial in testimonials %}
         <div class="row">
             <div class="col-lg-12">
                 <h2><a name="{{testimonial.name | slugify}}"></a><i class="fa fa-user"></i>&nbsp;{{ testimonial.name }}</h2>
@@ -21,7 +21,7 @@
                 </div>
             </div>
         </div>
+        <br />
+        {% endfor %}
     </div>
-    <br />
-    {% endfor %}
 {% endblock %}
