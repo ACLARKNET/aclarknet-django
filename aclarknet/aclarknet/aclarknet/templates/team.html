@@ -23,15 +23,13 @@
                 <p class="lead"><img class="img-thumbnail wrap" src="{% static 'amy-may-2003.png' %}">Amy Clark brings many years of professional sales, marketing, management, administrative and financial/legal experience to the ACLARK.NET, LLC team. She facilitates the smooth and uncomplicated engagement of our services and ensures the quality, accuracy and efficiency of all ACLARK.NET, LLC client accounts.</p>
             </div>
         </div>
-    </div>
-    <div class="background-white transparent padding-bottom">
-    {% for member in members %}
+        {% for member in members %}
         <div class="row">
             <div class="col-lg-12">
                 <h2><i class="fa fa-user"></i>&nbsp;{{ member.name }}</h2>
                 <p class="lead"><img class="img-thumbnail wrap" src="{{ member.icon.url }}">{{ member.text }}</p>
             </div>
         </div>
+        {% endfor %}
     </div>
-    {% endfor %}
 {% endblock %}
