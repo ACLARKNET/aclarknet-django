@@ -9,7 +9,7 @@
 {% endblock %}
 {% block content %}
     <h1><a href="/about">About</a> &rarr; Testimonials</h1>
-    <h2 class="width">A partial list of testimonials we have received for our work:</h2>
+    <h2 class="width">A partial list of testimonials we have received for our work</h2>
     {% for testimonial in testimonials %}
     <div class="background-white padding">
         <h2><a name="{{testimonial.name | slugify}}"></a><i class="fa fa-user"></i>&nbsp;{{ testimonial.name }}</h2>
