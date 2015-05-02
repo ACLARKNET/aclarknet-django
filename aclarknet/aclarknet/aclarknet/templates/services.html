@@ -10,11 +10,13 @@
 {% block content %}
     <h1>Services</h1>
     <h2 class="width">We provide the following web application development services</h2>
-    {% for service in services %}
     <div class="background-white padding transparent">
-        <h2><i class="fa fa-{{ service.icon }}"></i>&nbsp;{{ service.name }}</h2>
-        <p class="lead">{{ service.text|safe }}</p>
-    </div>
-    <hr />
+    {% for service in services %}
+        <div class="row">
+            <h2><i class="fa fa-{{ service.icon }}"></i>&nbsp;{{ service.name }}</h2>
+            <p class="lead">{{ service.text|safe }}</p>
+        </div>
+        <hr />
     {% endfor %}
+    </div>
 {% endblock %}
