@@ -1,5 +1,5 @@
-ACLARK.NET, LLC website in Django
-=================================
+ACLARK.NET, LLC website created with Django
+===========================================
 
 .. image:: screenshot.png
 
