@@ -6,4 +6,6 @@ ACLARK.NET, LLC website made with Django
 Heroku Remote
 -------------
 
-``git@heroku.com:aclarknet-django.git``
+::
+
+    git@heroku.com:aclarknet-django.git
