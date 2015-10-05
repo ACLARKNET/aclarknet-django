@@ -8,4 +8,4 @@ Heroku Remote
 
 ::
 
-    git@heroku.com:aclarknet-django.git
+    git remote add heroku git@heroku.com:aclarknet-django.git
